@@ -1,0 +1,11 @@
+<% unless user_signed_in? %>
+	<div class="hero-unit">
+		<h1>Welcome to TrollMeMaybe!</h1>
+		<p>
+			Upload And Share Images, GIFs as much as you like and Have Fun!!
+		</p>
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		</p>
+	</div>
+<% end %>
